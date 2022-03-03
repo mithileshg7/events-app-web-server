@@ -6,6 +6,7 @@
             <th>Description</th>
             <th>Location</th>
             <th>Date</th>
+            <th>Added to Calendar</th>
         </tr>
         </thead>
         <tbody>
@@ -15,6 +16,7 @@
                 <td>{{ description }}</td>
                 <td>{{ location }}</td>
                 <td>{{ date }}</td>
+                <td>{{ addedToCalender }}</td>
             </tr>
         {{/events}}
         </tbody>
@@ -39,6 +41,14 @@
             </div>
             <div>
                 <input id="description" name="description" type="text" placeholder="Event Description"/>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="addToCalender">Add to calender?</label>
+            </div>
+            <div>
+                <input id="addToCalender" name="addToCalender" type="text" placeholder="Yes or No"/>
             </div>
         </div>
         <div>
